@@ -1,1 +1,1 @@
-# capuchin-intranet
+# Capuchin Intranet
