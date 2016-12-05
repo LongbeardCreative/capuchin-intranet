@@ -1,0 +1,46 @@
+.divSearchBox {
+    background: #f3f0da;
+    padding: 10px 20px;
+}
+
+.divSearchBox .left .doctype {
+    width: 250px;
+    border: 1px solid #9CB7CE;
+}
+
+.divSearchBox .right .text {
+    width: 160px;
+    margin-left: 5px;
+}
+
+.divSearchBox .search {
+    width: 400px;
+    border: 1px solid #9CB7CE;
+    height: 17px;
+}
+
+.divNewsNotices dl {
+    clear: both;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.divNewsNotices dt {
+    float: left;
+    width: 115px;
+}
+
+.divNewsNotices dd {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 750px;
+}
+
+.divNewsNotices dd p {
+    padding-bottom: 0;
+}
+
+.PagerTopDiv {
+    float: right;
+}

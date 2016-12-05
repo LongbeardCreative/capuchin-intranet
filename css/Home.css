@@ -1,0 +1,86 @@
+p.text {
+    padding-top: 5px;
+}
+
+.divColLeft {
+    float: left;
+    width: 620px;
+    margin-right: 15px;
+}
+
+.divColLeft .divNewsInfo {
+    padding: 8px 0;
+}
+
+.divColLeft .divNewsInfo img {
+    margin-right: 15px;
+    float: left;
+}
+
+.divColLeft .divNewsInfo ul {
+    float: left;
+    display: block;
+    padding-left: 16px;
+}
+
+.divColLeft .divNewsInfo .divNewsInfoRight {
+    float: left;
+}
+
+.divColRight {
+    float: right;
+    width: 245px;
+}
+
+.divColRight .box-cons-life img {
+    border: 0;
+    margin: 10px 0 0 10px;
+}
+
+.divColRight .divLookup {
+    padding: 10px 0 10px 10px;
+}
+
+.divLookup .left {
+    float: left;
+    width: 300px;
+}
+
+.divLookup input.text {
+    width: 180px;
+}
+
+.divLookup .right {
+    float: left;
+    width: 300px;
+    padding-top: 8px;
+}
+
+.divColRight .links {
+    padding: 10px 5px 5px 10px;
+}
+
+.divColRight .links p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.divColRight ul {
+    margin: 0;
+    padding: 10px 5px 5px 10px;
+    list-style: none;
+}
+
+.divColRight ul li {
+    padding-bottom: 5px;
+}
+
+.divColRight ul p {
+    margin: 0;
+    padding: 0;
+}
+
+.FindFriarTextBoxAutoComplete {
+    width: 100px;
+    height: 50px;
+}

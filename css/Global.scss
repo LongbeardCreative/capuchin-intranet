@@ -1,0 +1,301 @@
+@import "palette";
+@import "shadow";
+@import "bourbon";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+/* VARIABLES */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: $color1 repeat-x 0 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: $color5 repeat-y center top;
+    color: $color6;
+    font: .75em/1.4 'Arial', 'Helvetica', sans-serif;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+textarea, input, select, option, optgroup, button {
+    font: 1em 'Arial', 'Helvetica', sans-serif;
+}
+
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p, ul, ol, dl {
+    padding-bottom: 1em;
+}
+
+img {
+    @include card(0);
+    @include transition(250ms);
+    &:hover {
+        @include card(2);
+    }
+}
+
+img.no-border {
+    border: none !important;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 3ex;
+}
+
+a {
+    color: $color3;
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus, a:hover {
+    color: tint($color3, 20%);
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.error {
+    font-weight: bold;
+    color: #FF3333;
+}
+
+h1 {
+    color: $color3;
+    font-size: 1.8em;
+    padding: 10px 0;
+    margin: 0;
+}
+
+h2.header {
+    margin: 10px 0 0 0;
+    padding: 2px 10px 0px 10px;
+    background: #285ea6;
+    color: $color5;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+h3.title {
+    font-size: 1.3em;
+    color: $color3;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+input.text {
+    border: 1px solid $color4;
+    height: 25px;
+}
+
+input.button {
+    margin-left: 5px;
+    border: 1px solid #9cb7ce;
+    height: 25px;
+}
+
+.box-01 {
+    margin-bottom: 14px;
+    padding-top: 7px;
+    background: $color5 no-repeat 0 0;
+}
+
+.box-01-bottom {
+    padding-bottom: 7px;
+    background: $color5 no-repeat 0 100%;
+}
+
+.box-01-middle {
+    overflow: hidden;
+    padding: 15px 22px;
+    border: 1px solid $color2;
+    border-top: none;
+    border-bottom: none;
+    background: #FFF;
+    width: 686px;
+}
+
+.box-02 {
+    margin-bottom: 14px;
+    padding-top: 7px;
+    background: $color3 no-repeat 0 0;
+}
+
+.box-02-bottom {
+    padding-bottom: 7px;
+    background: transparent url('../images/box_02.png') no-repeat 0 100%;
+}
+
+.box-02-middle {
+    overflow: hidden;
+    padding: 6px 16px;
+    border: 1px solid #729BC7;
+    border-top: none;
+    border-bottom: none;
+    background: #FFF;
+    width: 859px;
+}
+
+.box-sm {
+    margin-bottom: 14px;
+    padding-top: 7px;
+    background: transparent url('../images/box_sm.png') no-repeat 0 0;
+}
+
+.box-sm-bottom {
+    padding-bottom: 7px;
+    background: transparent url('../images/box_sm.png') no-repeat 0 100%;
+}
+
+.box-sm-middle {
+    overflow: hidden;
+    padding: 15px 22px;
+    border: 1px solid #729BC7;
+    border-top: none;
+    border-bottom: none;
+    background: #FFF;
+    width: 554px;
+}
+
+.ma-container {
+    position: absolute;
+    top: 0;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.ma-container ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.ma-container li {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 2px 4px;
+    line-height: 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.ma-container strong {
+    font-weight: 900;
+}
+
+.ma-container .ma-hover {
+    color: #fff;
+    background-color: #921506 !important;
+}
+
+.ma-container .ma-odd {}
+
+.ma-container .ma-even {
+    background-color: #efefef;
+}
+
+.ma-loading {
+    background-color: #fafba4;
+}
+
+.ma-selected {
+    background-color: #ccfda8;
+}
+
+​ #PageDiv {
+    width: 100%;
+}
+
+#PageHeaderDiv {
+    position: relative;
+    width: 100%;
+    background-color: $color5;
+    z-index: 9;
+}
+
+h2 {
+    width: 100%;
+    background: $color1;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#PageBodyDiv {
+    width: 100%;
+}
+
+.PageBodyRightColDiv {
+    width: 635px;
+    margin: 0 0 0 260px;
+    padding-top: 15px;
+}
+
+.divSearch {
+    float: right;
+    width: 200px;
+}
+
+.divSearch input {
+    float: left;
+}
+
+.PageBodyRightColDiv h3 {
+    margin: 0;
+}
+
+.UserFormDiv {
+    padding-left: 146px;
+}
+
+.UserFormDiv h1 {
+    padding-left: 25px;
+    margin-top: 20px;
+}
